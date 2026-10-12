@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Travaux pratiques réalisés par Ilyes Ben Ahmed pendant son BTS SIO."
+    >
+
+    <title>Travaux pratiques — Ilyes Ben Ahmed</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .tp-filters {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 24px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            background: transparent;
+            color: inherit;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .filter-btn:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .filter-btn.active {
+            background: #fff;
+            color: #000;
+            border-color: #fff;
+        }
+
+        .tp-card.is-hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="page-inner page-tp">
+
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="background-glow glow-one" aria-hidden="true"></div>
+
+    <header class="header">
+        <a href="accueil.html" class="logo">
+            IBA<span>.</span>
+        </a>
+
+        <nav class="navigation" aria-label="Navigation principale">
+            <a href="accueil.html">Accueil</a>
+            <a href="accueil.html#apropos">À propos</a>
+            <a href="accueil.html#competences">Compétences</a>
+            <a href="tp.html" class="active">TP</a>
+            <a href="projet.html">Projets</a>
+            <a href="veille.html">Veille</a>
+
+            <a href="accueil.html#contact" class="nav-contact">
+                Contact
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inner-hero">
+            <div class="breadcrumb">
+                <a href="accueil.html">Accueil</a>
+                <span>/</span>
+                <p>Travaux pratiques</p>
+            </div>
+
+            <p class="section-number">Portfolio — BTS SIO</p>
+
+            <h1>
+                Mes travaux
+                <span>pratiques.</span>
+            </h1>
+
+            <div class="inner-hero-bottom">
+                <p>
+                    Retrouvez les différents travaux réalisés pendant ma
+                    formation : développement web, matériel informatique,
+                    virtualisation et administration de Windows.
+                </p>
+
+                <div class="inner-stat">
+                    <strong>06</strong>
+                    <span>Travaux présentés</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="inner-section">
+
+            <div class="tp-filters" role="group" aria-label="Filtrer par année">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="1">SIO 1</button>
+                <button class="filter-btn" data-filter="2">SIO 2</button>
+            </div>
+
+            <div class="tp-grid">
+
+                <article class="tp-card tp-card-featured" data-year="1 2">
+                    <div class="tp-card-top">
+                        <span class="card-number">01</span>
+                        <span class="card-category">Développement web</span>
+                    </div>
+
+                    <div class="tp-icon">&lt;/&gt;</div>
+
+                    <h2>Création du portfolio</h2>
+
+                    <p>
+                        Apprentissage des bases du HTML et du CSS afin de
+                        concevoir la première version de mon portfolio.
+                    </p>
+
+                    <div class="card-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Structure web</span>
+                    </div>
+                </article>
+
+ <!-- 2 -->
+
+                <article class="tp-card" data-year="1 ">
+                    <div class="tp-card-top">
+                        <span class="card-number">02</span>
+                        <span class="card-category">Matériel</span>
+                    </div>
+
+                    <div class="tp-icon">▧</div>
+
+                    <h2>Configuration des composants</h2>
+
+                    <p>
+                        Étude des composants d’un ordinateur et sélection des
+                        meilleures configurations selon les besoins d’un
+                        client.
+                    </p>
+
+                    <div class="card-tags">
+                        <span>CPU</span>
+                        <span>RAM</span>
+                        <span>Stockage</span>
+                        <span>Conseil client</span>
+                        <button onclick="window.open('tp/tp2.pdf', '_blank')">TP 2</button>
+                    </div>
+                </article>
+
+ <!-- 3 -->
+
+                <article class="tp-card" data-year="1 ">
+                    <div class="tp-card-top">
+                        <span class="card-number">03</span>
+                        <span class="card-category">Virtualisation</span>
+                    </div>
+
+                    <div class="tp-icon">◫</div>
+
+                    <h2>Installation de Tiny10 sur VM</h2>
+
+                    <p>
+                        Installation et configuration d’une machine virtuelle
+                        avec VirtualBox, montage d’une image ISO et mise en
+                        place des Additions invité.
+                    </p>
+
+                    <div class="card-tags">
+                        <span>VirtualBox</span>
+                        <span>Tiny10</span>
+                        <span>ISO</span>
+                        <span>Guest Additions</span>
+                        <button onclick="window.open('tp/tp3.pdf', '_blank')">TP 3</button>
+                    </div>
+                </article>
+
+ <!-- 4-->
+
+                <article class="tp-card" data-year="1 ">
+                    <div class="tp-card-top">
+                        <span class="card-number">04</span>
+                        <span class="card-category">Explorateurs de l'invite de commandes</span>
+                    </div>
+
+                    <div class="tp-icon">&gt;_</div>
+
+                    <h2>Invite de commandes</h2>
+
+                    <p>
+                        Utilisation des commandes Windows pour naviguer,
+                        gérer les fichiers et consulter les informations du
+                        système et du réseau.
+                    </p>
+
+                    <div class="card-tags">
+                        <span>CMD</span>
+                        <span>Fichiers</span>
+                        <span>Système</span>
+                        <span>Réseau</span>
+                        <button onclick="window.open('tp/tp4.pdf', '_blank')">TP 4</button>
+                    </div>
+                </article>
+
+
+ <!-- 4.2 V-->
+
+<article class="tp-card" data-year="1 ">
+                    <div class="tp-card-top">
+                        <span class="card-number">4.2</span>
+                        <span class="card-category">Maîtrise du CMD Windows: Administration système et réseau</span>
+                    </div>
+
+                    <div class="tp-icon">&gt;_</div>
+
+                    <h2>Administrations systeme reseau</h2>
+
+                    <p>
+                       Approfondir l'utilisation de l'invite de commandes Windows `
+pour la gestion avancée des attributs de fichiers, le contrôle des processus, 
+le diagnostic réseau approfondi et la création de scripts d'automatisation.
+                    </p>
+
+                    <div class="card-tags">
+                        <span>Réseau</span>
+                        <span>Fichiers</span>
+                        <span>netstat</span>
+                        <span>scriping.bat </span>
+                        <button onclick="window.open('tp/tp4.2.pdf', '_blank')">TP 4</button>
+                    </div>
+                </article>
+
+ <!-- 5 V-->
+
+                <article class="tp-card" data-year="1 ">
+                    <div class="tp-card-top">
+                        <span class="card-number">05</span>
+                        <span class="card-category">Organisation et manipulation de fichiers en ligne de commande - CMD & PowerShell</span>
+                    </div>
+
+                    <div class="tp-icon">PS</div>
+
+                    <h2>CMD et PowerShell</h2>
+
+                    <p>
+                        Comprendre l'intérêt de la ligne de commande dans l'administration système, 
+                        structurer et gérer une arborescence de dossiers professionnelle pour des profils spécifiques 
+                        (SISR et SLAM), et manipuler des fichiers à l'aide de CMD et de PowerShell.
+                    </p>
+
+                    <div class="card-tags">
+                        <span>SGBD</span>
+                        <span>SQL</span>
+                        <span>Primary Key</span>
+                        <span>Secondary Key</span>
+                        <button onclick="window.open('tp/tp5.pdf', '_blank')">TP 5</button>
+                    </div>
+                </article>
+
+ <!-- 5.1 V-->
+
+                <article class="tp-card" data-year="1 ">
+                    <div class="tp-card-top">
+                        <span class="card-number">05.1</span>
+                        <span class="card-category">Introduction Base de Données</span>
+                    </div>
+
+                    <div class="tp-icon">PS</div>
+
+                    <h2>CMD et PowerShell</h2>
+
+                    <p>
+                        Manipulation de fichiers avec CMD et PowerShell,
+                        création d’une arborescence SISR/SLAM et découverte de
+                        leur utilisation en administration.
+                    </p>
+
+                    <div class="card-tags">
+                        <span>SGBD</span>
+                        <span>SQL</span>
+                        <span>Primary Key</span>
+                        <span>Secondary Key</span>
+                        <button onclick="window.open('tp/tp5.1.pdf', '_blank')">TP 5</button>
+                    </div>
+                </article>
+
+ <!-- 5.2 V-->
+
+<article class="tp-card" data-year="1 ">
+                    <div class="tp-card-top">
+                        <span class="card-number">05.2</span>
+                        <span class="card-category">Création d'un outil de sauvegarde personnalisé</span>
+                    </div>
+
+                    <div class="tp-icon">PS</div>
+
+                    <h2>CMD et PowerShell</h2>
+
+                    <p>
+                        Concevoir un script Batch d'automatisation de sauvegarde sur-mesure capable d'interagir avec l'utilisateur, 
+                        de générer des dossiers horodatés, d'effectuer des copies ciblées et d'archiver un journal détaillé des opérations
+                    </p>
+
+                    <div class="card-tags">
+                        <span>SGBD</span>
+                        <span>SQL</span>
+                        <span>Primary Key</span>
+                        <span>Secondary Key</span>
+                        <button onclick="window.open('tp/tp5.2.pdf', '_blank')">TP 5</button>
+                    </div>
+                </article>
+
+ <!-- 6 -->
+                <article class="tp-card" data-year="1 ">
+                    <div class="tp-card-top">
+                        <span class="card-number">06</span>
+                        <span class="card-category">Support</span>
+                    </div>
+
+                    <div class="tp-icon">⌘</div>
+
+                    <h2>Commandes essentielles du support</h2>
+
+                    <p>
+                        Mise en pratique des commandes CMD importantes pour
+                        le diagnostic et le support informatique sous Windows.
+                    </p>
+
+                    <div class="card-tags">
+                        <span>Diagnostic</span>
+                        <span>Support</span>
+                        <span>Windows</span>
+                        <button onclick="window.open('tp/tp6.pdf', '_blank')">TP 6</button>
+                    </div>
+                </article>
+
+                <!-- SIO2 1 -->
+                <article class="tp-card" data-year="2">
+                    <div class="tp-card-top">
+                        <span class="card-number">Lab1 Fondation VLAN</span>
+                        <span class="card-category">Cisco</span>
+                    </div>
+
+                    <div class="tp-icon">⌘</div>
+
+                    <h2>Configuration et sécurisation d’un switch Cisco</h2>
+
+                    <p>
+                        Configuration d'un switch Cisco 2960 dans un contexte d'entreprise.
+                        Configuration de base, sécurisé les accès avec SSH, créé des VLAN, affecté les ports et mis 
+                        en place Port-Security pour limiter les connexions non autorisées.
+
+                    </p>
+
+                    <div class="card-tags">
+                        <span>Diagnostic</span>
+                        <span>Support</span>
+                        <span>Windows</span>
+                        <button onclick="window.open('tp/sio2/tp1.docx', '_blank')">TP 1</button>
+                    </div>
+                </article>
+
+                 <!-- SIO2 2 -->
+                <article class="tp-card" data-year="2">
+                    <div class="tp-card-top">
+                        <span class="card-number">Lab1 Commande Linux</span>
+                        <span class="card-category">Linux</span>
+                    </div>
+
+                    <div class="tp-icon">⌘</div>
+
+                    <h2>Commandes essentielles du support</h2>
+
+                    <p>
+                        Mise en pratique des commandes CMD importantes pour
+                        le diagnostic et le support informatique sous Linux.
+                        Navigation dans l'arborescence,
+                    </p>
+
+                    <div class="card-tags">
+                        <span>Arborescence</span>
+                        <span>CMD</span>
+                        <span>Linux</span>
+                        <button onclick="window.open('tp/sio2/tp2.pdf', '_blank')">TP 2</button>
+                    </div>
+                </article>
+
+                     <!-- SIO2 3 -->
+                <article class="tp-card" data-year="2">
+                    <div class="tp-card-top">
+                        <span class="card-number">Lab2 Commande Linux</span>
+                        <span class="card-category">Linux</span>
+                    </div>
+
+                    <div class="tp-icon">⌘</div>
+
+                    <h2>Gestion des utilisateurs et groupes sous Linux</h2>
+
+                    <p>
+                        Il détaille l'utilisation des commandes fondamentales (useradd, groupadd, usermod, userdel, chage, passwd) 
+                        ainsi que la structure des fichiers système clés (/etc/passwd, /etc/shadow, /etc/group).
+                    </p>
+
+                    <div class="card-tags">
+                        <span>/etc/shadow</span>
+                        <span>Session</span>
+                        <span>Linux</span>
+                        <button onclick="window.open('tp/sio2/tp3.docx', '_blank')">TP 3</button>
+                    </div>
+                </article>
+
+                 <!-- SIO2 4 -->
+                <article class="tp-card" data-year="2">
+                    <div class="tp-card-top">
+                        <span class="card-number">04</span>
+                        <span class="card-category">Support</span>
+                    </div>
+
+                    <div class="tp-icon">⌘</div>
+
+                    <h2>Commandes essentielles du support</h2>
+
+                    <p>
+                        Mise en pratique des commandes CMD importantes pour
+                        le diagnostic et le support informatique sous Windows.
+                    </p>
+
+                    <div class="card-tags">
+                        <span>Diagnostic</span>
+                        <span>Support</span>
+                        <span>Windows</span>
+                        <button onclick="window.open('tp/sio2/tp1.docx', '_blank')">TP 1</button>
+                    </div>
+                </article>
+
+
+            </div>
+        </section>
+
+        <section class="page-callout">
+            <div>
+                <p class="section-number">Progression</p>
+
+                <h2>
+                    Apprendre par
+                    <span>la pratique.</span>
+                </h2>
+
+                <p>
+                    Ces travaux m’ont permis de développer mes compétences en
+                    développement, virtualisation et administration système.
+                </p>
+            </div>
+
+            <a href="projet.html" class="button button-primary">
+                Voir mes projets
+                <span aria-hidden="true">↗</span>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="accueil.html" class="logo">
+            IBA<span>.</span>
+        </a>
+
+        <p>© 2026 Ilyes Ben Ahmed — Travaux pratiques</p>
+
+        <div class="footer-links">
+            <a href="accueil.html">Accueil</a>
+            <a href="projet.html">Projets</a>
+            <a href="veille.html">Veille</a>
+        </div>
+    </footer>
+
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const tpCards = document.querySelectorAll('.tp-card');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+
+                tpCards.forEach(card => {
+                    const years = card.dataset.year.split(' ');
+                    const show = filter === 'all' || years.includes(filter);
+                    card.classList.toggle('is-hidden', !show);
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

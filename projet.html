@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Projet Xubuntu d'Ilyes Ben Ahmed : virtualisation, réseau, administration Linux et cybersécurité."
+    >
+
+    <title>Mes projets — Ilyes Ben Ahmed</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+<link rel="stylesheet" href="./style.css">
+<script src="./portfolio.js" defer></script>
+</head>
+
+<body class="page-inner page-projects">
+
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="background-glow glow-one" aria-hidden="true"></div>
+    <div class="background-glow glow-two" aria-hidden="true"></div>
+
+    <header class="header">
+        <a href="accueil.html" class="logo">
+            IBA<span>.</span>
+        </a>
+
+        <nav class="navigation" aria-label="Navigation principale">
+            <a href="accueil.html">Accueil</a>
+            <a href="accueil.html#apropos">À propos</a>
+            <a href="accueil.html#competences">Compétences</a>
+            <a href="tp.html">TP</a>
+            <a href="projet.html" class="active">Projets</a>
+            <a href="veille.html">Veille</a>
+
+            <a href="accueil.html#contact" class="nav-contact">
+                Contact
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inner-hero">
+            <div class="breadcrumb">
+                <a href="accueil.html">Accueil</a>
+                <span>/</span>
+                <p>Mes projets</p>
+            </div>
+
+            <p class="section-number">
+                Réseau — Système — Cybersécurité
+            </p>
+
+            <h1>
+                Projet
+                <span>Xubuntu.</span>
+            </h1>
+
+            <div class="inner-hero-bottom">
+                <p>
+                    Mise en place complète d’un environnement Linux
+                    virtualisé, depuis la création de la machine jusqu’à sa
+                    configuration réseau, sa sécurisation et l’installation
+                    d’un serveur web.
+                </p>
+
+                <div class="inner-stat">
+                    <strong>08</strong>
+                    <span>Étapes de réalisation</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="inner-section">
+            <article class="project-showcase">
+                <div class="project-showcase-visual">
+                    <div class="project-status">
+                        <i></i>
+                        Projet terminé
+                    </div>
+
+                    <div class="project-terminal">
+                        <div class="project-terminal-bar">
+                            <div>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+
+                            <span>ilyes@xubuntu: ~</span>
+                        </div>
+
+                        <div class="project-terminal-code">
+                            <p>
+                                <strong>ilyes@xubuntu</strong>:~$
+                                sudo apt update
+                            </p>
+
+                            <p class="terminal-muted">
+                                Lecture des listes de paquets...
+                                <span>Fait</span>
+                            </p>
+
+                            <p>
+                                <strong>ilyes@xubuntu</strong>:~$
+                                sudo apt upgrade
+                            </p>
+
+                            <p class="terminal-muted">
+                                Système et noyau Linux mis à jour.
+                            </p>
+
+                            <p>
+                                <strong>ilyes@xubuntu</strong>:~$
+                                ip address
+                            </p>
+
+                            <p class="terminal-muted">
+                                inet 192.168.1.26/24
+                            </p>
+
+                            <p>
+                                <strong>ilyes@xubuntu</strong>:~$
+                                systemctl status apache2
+                            </p>
+
+                            <p class="terminal-active">
+                                ● apache2.service — active (running)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-showcase-content">
+                    <div class="card-tags">
+                        <span>Linux</span>
+                        <span>VirtualBox</span>
+                        <span>Réseau</span>
+                    </div>
+
+                    <h2>
+                        Création et sécurisation d’une machine virtuelle
+                        Xubuntu
+                    </h2>
+
+                    <p>
+                        L’objectif était de transformer une image ISO en une
+                        station de travail opérationnelle, correctement
+                        dimensionnée et sécurisée dès son premier démarrage.
+                    </p>
+
+                    <div class="project-facts">
+                        <article>
+                            <span>Domaine</span>
+                            <strong>Réseau informatique</strong>
+                        </article>
+
+                        <article>
+                            <span>Système</span>
+                            <strong>Xubuntu / Linux</strong>
+                        </article>
+
+                        <article>
+                            <span>Hyperviseur</span>
+                            <strong>VirtualBox</strong>
+                        </article>
+
+                        <article>
+                            <span>Finalité</span>
+                            <strong>Station sécurisée</strong>
+                        </article>
+                    </div>
+
+                    <a href="#etapes" class="button button-primary">
+                        Découvrir les étapes
+                        <span aria-hidden="true">↓</span>
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <section class="inner-section bordered-section" id="etapes">
+            <div class="inner-heading">
+                <div>
+                    <p class="section-number">Déroulement</p>
+
+                    <h2>
+                        De l’installation à
+                        <span>la mise en service.</span>
+                    </h2>
+                </div>
+
+                <p>
+                    Une démarche progressive pour obtenir un environnement
+                    stable, connecté et adapté à l’administration réseau.
+                </p>
+            </div>
+
+            <div class="steps-list">
+                <article class="step-card">
+                    <span class="step-number">01</span>
+
+                    <div>
+                        <p class="step-label">Virtualisation</p>
+                        <h3>Création de l’architecture virtuelle</h3>
+                        <p>
+                            Création de la machine et attribution de la RAM,
+                            du CPU et de l’espace disque nécessaires, sans
+                            ralentir l’ordinateur physique.
+                        </p>
+
+                        <div class="card-tags">
+                            <span>RAM</span>
+                            <span>CPU</span>
+                            <span>Disque virtuel</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">02</span>
+
+                    <div>
+                        <p class="step-label">Système</p>
+                        <h3>Installation de Xubuntu</h3>
+                        <p>
+                            Démarrage depuis l’image ISO, puis installation et
+                            configuration initiale de la distribution Linux.
+                        </p>
+
+                        <div class="card-tags">
+                            <span>Xubuntu</span>
+                            <span>Linux</span>
+                            <span>ISO</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">03</span>
+
+                    <div>
+                        <p class="step-label">Maintenance</p>
+                        <h3>Mise à jour du système</h3>
+                        <p>
+                            Mise à jour des dépôts, des logiciels et du noyau
+                            afin d’appliquer les correctifs disponibles.
+                        </p>
+
+                        <div class="command-box">
+                            <span>$</span>
+                            <code>
+                                sudo apt update && sudo apt upgrade
+                            </code>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">04</span>
+
+                    <div>
+                        <p class="step-label">Réseau</p>
+                        <h3>Configuration NAT et mode pont</h3>
+                        <p>
+                            Le NAT permet l’accès à Internet et le mode pont
+                            permet à la VM d’apparaître comme une machine
+                            réelle sur le réseau local.
+                        </p>
+
+                        <div class="card-tags">
+                            <span>NAT</span>
+                            <span>Mode pont</span>
+                            <span>Adresse IP</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">05</span>
+
+                    <div>
+                        <p class="step-label">VirtualBox</p>
+                        <h3>Additions invité et utilisateurs</h3>
+                        <p>
+                            Activation du plein écran, du copier-coller et du
+                            partage de dossiers, puis gestion des comptes et
+                            des permissions.
+                        </p>
+
+                        <div class="card-tags">
+                            <span>Guest Additions</span>
+                            <span>Utilisateurs</span>
+                            <span>Permissions</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">06</span>
+
+                    <div>
+                        <p class="step-label">Cybersécurité</p>
+                        <h3>Installation des outils essentiels</h3>
+                        <p>
+                            Installation d’outils de scan, d’analyse du
+                            trafic, de protection, de simulation réseau et de
+                            sécurité des applications web.
+                        </p>
+
+                        <div class="tools-grid">
+                            <article>
+                                <strong>Nmap</strong>
+                                <span>Scan réseau</span>
+                            </article>
+
+                            <article>
+                                <strong>Wireshark</strong>
+                                <span>Analyse du trafic</span>
+                            </article>
+
+                            <article>
+                                <strong>Fail2ban</strong>
+                                <span>Protection force brute</span>
+                            </article>
+
+                            <article>
+                                <strong>Suricata</strong>
+                                <span>IDS et IPS</span>
+                            </article>
+
+                            <article>
+                                <strong>Packet Tracer</strong>
+                                <span>Simulation réseau</span>
+                            </article>
+
+                            <article>
+                                <strong>Burp Suite</strong>
+                                <span>Sécurité web</span>
+                            </article>
+
+                            <article>
+                                <strong>VLC</strong>
+                                <span>Multimédia</span>
+                            </article>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">08</span>
+
+                    <div>
+                        <p class="step-label">Serveur web</p>
+                        <h3>Installation d’un serveur complet</h3>
+                        <p>
+                            Mise en place d’un serveur web sous Linux afin
+                            d’héberger et de tester des pages depuis la
+                            machine virtuelle.
+                        </p>
+
+                        <div class="server-box">
+                            <i></i>
+
+                            <div>
+                                <span>État du serveur</span>
+                                <strong>Actif et opérationnel</strong>
+                            </div>
+
+                            <code>localhost</code>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="page-callout">
+            <div>
+                <p class="section-number">Résultat</p>
+
+                <h2>
+                    Une station Linux
+                    <span>complète et sécurisée.</span>
+                </h2>
+
+                <p>
+                    Le système est à jour, connecté au réseau et équipé pour
+                    l’administration, l’analyse réseau et la cybersécurité.
+                </p>
+            </div>
+
+            <a href="veille.html" class="button button-primary">
+                Voir ma veille
+                <span aria-hidden="true">↗</span>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="accueil.html" class="logo">
+            IBA<span>.</span>
+        </a>
+
+        <p>© 2026 Ilyes Ben Ahmed — Mes projets</p>
+
+        <div class="footer-links">
+            <a href="accueil.html">Accueil</a>
+            <a href="tp.html">TP</a>
+            <a href="veille.html">Veille</a>
+        </div>
+    </footer>
+
+</body>
+</html>
